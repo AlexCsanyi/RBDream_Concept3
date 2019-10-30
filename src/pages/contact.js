@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from "../components/footer"
 
 const ContactPage = () => {
   return (
@@ -15,6 +16,7 @@ const ContactPage = () => {
           @radoslavbarbulrale
         </a>
       </p>
+      <Footer />
     </div>
   )
 }
