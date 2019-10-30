@@ -1,9 +1,11 @@
 import React from "react"
 import Footer from "../components/footer"
+import Header from "../components/header"
 
 const ContactPage = () => {
   return (
     <div>
+      <Header />
       <h1>Contact RB Dream</h1>
       <p>email: info@rbdream.com</p>
       <p>
