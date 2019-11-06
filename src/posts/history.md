@@ -5,6 +5,8 @@ date: "04 Nov 2019"
 
 We launched in 2016 and since then it has been an amazing journey!
 
+![Dog in a hat](./dog.jpg)
+
 ## What you'll read about:
 
 1. What was the inspiration?
