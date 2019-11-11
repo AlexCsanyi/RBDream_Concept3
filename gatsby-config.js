@@ -4,6 +4,7 @@ module.exports = {
     author: "RB Dream Team | Kristina Barbul",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
       options: {
