@@ -1,0 +1,18 @@
+.standard-button {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: ease-in-out 0.6s;
+  letter-spacing: 2px;
+}
+
+.standard-button:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background: #ffffff;
+}
