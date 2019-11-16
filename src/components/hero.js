@@ -25,8 +25,7 @@ const Hero = () => {
         </h1>
         <p className={heroStyles.intro}>
           If you love fishing this is the place to be! We are the largest
-          retailers of fishing products in Kikinda. Our goal is to share and
-          spread the love of nature and an outdoor lifestyle!
+          retailers of fishing products in Kikinda.
         </p>
         <Button></Button>
       </div>

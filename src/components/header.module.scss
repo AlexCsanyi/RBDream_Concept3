@@ -6,16 +6,19 @@
 }
 
 .nav-list {
-  display: flex;
+  display: grid;
+  max-width: 850px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
   list-style: none;
-  justify-content: center;
   text-align: center;
 }
 
 .nav-item {
   color: #ffffff;
   font-size: 0.9rem;
-  margin-right: 1.3rem;
   text-decoration: none;
   display: inline-block;
   border-top: 5px solid transparent;
