@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className={headerStyles.headerGroup}>
       <header>
-        <nav>
+        <nav className={headerStyles.nav} role="navigation">
           <ul className={headerStyles.navList}>
             <li>
               <Link
@@ -50,6 +50,53 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+        </nav>
+
+        <nav className={headerStyles.mobileMenu} role="navigation">
+          <div className={headerStyles.toggle}>
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul className={headerStyles.mobileNavList}>
+              <li>
+                <Link
+                  className={headerStyles.mobileNavItem}
+                  activeClassName={headerStyles.mobileActiveNavItem}
+                  to="/"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={headerStyles.mobileNavItem}
+                  activeClassName={headerStyles.mobileActiveNavItem}
+                  to="/blog"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={headerStyles.mobileNavItem}
+                  activeClassName={headerStyles.mobileActiveNavItem}
+                  to="/about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={headerStyles.mobileNavItem}
+                  activeClassName={headerStyles.mobileActiveNavItem}
+                  to="/contact"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
     </div>
