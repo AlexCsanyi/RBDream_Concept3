@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Logo from "../images/logo.png"
 
 import headerStyles from "./header.module.scss"
 
@@ -27,6 +28,15 @@ const Header = () => {
               >
                 <p>02.</p>
                 <h3>Blog</h3>
+              </Link>
+            </li>
+            <li>
+              <Link to="/">
+                <img
+                  className={headerStyles.logo}
+                  alt="RB Dream Logo"
+                  src={Logo}
+                ></img>
               </Link>
             </li>
             <li>

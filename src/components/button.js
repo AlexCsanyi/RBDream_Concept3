@@ -6,7 +6,7 @@ const Button = () => {
   return (
     <div>
       <Link className={buttonStyles.standardButton} to="/about">
-        Find Out More
+        Find Us
       </Link>
     </div>
   )
