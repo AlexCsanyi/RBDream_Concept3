@@ -16,38 +16,45 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home"></Head>
       <div className={homeStyles.home}>
-        <h1>Welcome to RB Dream!</h1>
-        <h3>
-          Discover a world filled with a wide range of high quality products
-          from top suppliers and well konwn brands.
-        </h3>
-        <div>
-          <h3>See what's in store</h3>
+        <div className={homeStyles.welcome}>
+          <h1>Welcome to RB Dream!</h1>
+          <hr className={homeStyles.yellowLine}></hr>
+          <h3>
+            Discover a world filled with a wide range of high quality products
+            from top suppliers and well konwn brands.
+          </h3>
         </div>
-        <Card
-          title="Fishing"
-          text="Rods, reels, baits & more"
-          image={thumbFishing}
-          alt="Fishing rod and reel in front of a lake"
-        ></Card>
-        <Card
-          title="Pets"
-          text="Pet food, grooming, toys, collars & more"
-          image={thumbPets}
-          alt="Woman is petting a Labrador dog"
-        ></Card>
-        <Card
-          alt="Gardening tools and soil"
-          title="Garden"
-          text="Seeds & tools"
-          image={thumbGarden}
-        ></Card>
-        <Card
-          title="Licence"
-          text="Get your fishing licence in store"
-          image={thumbTicket}
-          alt="A wooden sign with tickets written on it"
-        ></Card>
+        <div>
+          <div className={homeStyles.cardGroup}>
+            <h4>
+              <sup>01</sup>Store
+            </h4>
+            <Card
+              title="Fishing"
+              text="Rods, reels, baits & more"
+              image={thumbFishing}
+              alt="Fishing rod and reel in front of a lake"
+            ></Card>
+            <Card
+              title="Pets"
+              text="Pet food, grooming, toys, collars & more"
+              image={thumbPets}
+              alt="Woman is petting a Labrador dog"
+            ></Card>
+            <Card
+              alt="Gardening tools and soil"
+              title="Garden"
+              text="Seeds & tools"
+              image={thumbGarden}
+            ></Card>
+            <Card
+              title="Licence"
+              text="Get your fishing licence in store"
+              image={thumbTicket}
+              alt="A wooden sign with tickets written on it"
+            ></Card>
+          </div>
+        </div>
         <p>
           Want to get in touch?{" "}
           <Link className={homeStyles.link} to="/contact">
