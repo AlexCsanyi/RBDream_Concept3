@@ -9,7 +9,7 @@
 .hero-group {
   max-width: 850px;
   margin: 0 auto;
-  padding: 180px 0px;
+  padding: 200px 0px;
   text-align: center;
 }
 
@@ -23,8 +23,9 @@
 
 .intro {
   color: rgba($color: #ffffff, $alpha: 0.7);
-  font-size: 2rem;
+  font-size: 1.3rem;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 640px) {
@@ -49,6 +50,4 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 0;
-  padding: 0;
 }
