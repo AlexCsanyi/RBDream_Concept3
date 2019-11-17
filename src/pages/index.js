@@ -1,15 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 import Card from "../components/card"
+import CardFullWidth from "../components/cardFullWidth"
 
 import homeStyles from "./index.module.scss"
 import thumbFishing from "../images/thumbFishing.jpg"
 import thumbGarden from "../images/thumbGarden.jpg"
 import thumbPets from "../images/thumbPets.jpg"
 import thumbTicket from "../images/thumbTicket.jpg"
+import productImgOne from "../images/1.png"
+import productImgTwo from "../images/2.png"
+import productImgThree from "../images/product3.png"
+import productImgFour from "../images/product4.png"
+import productImgFive from "../images/product5.png"
 
 const IndexPage = () => {
   return (
@@ -55,12 +60,45 @@ const IndexPage = () => {
             ></Card>
           </div>
         </div>
-        <p>
-          Want to get in touch?{" "}
-          <Link className={homeStyles.link} to="/contact">
-            Contact us
-          </Link>
-        </p>
+        <div className={homeStyles.section}>
+          <CardFullWidth
+            name="PENN SPINFISHER V"
+            title="Penn’s Spinfisher rocks a solid 5+1 bearing system"
+            text="It features a sealed drag system which is a cool innovation that prevents corrosion and failure of the drag system over time due to water contamination..."
+            image={productImgOne}
+            alt="PENN SPINFISHER V fishing reel"
+          ></CardFullWidth>
+          <CardFullWidth
+            name="SHIMANO STRADIC FK"
+            className="right"
+            title="Versatile enough to meet just about any need."
+            text="Shimano has centered these reels around their X-Ship technology which is aimed at improving the durability and longevity of the internal drive system..."
+            image={productImgTwo}
+            alt="SHIMANO STRADIC FK fishing reel"
+          ></CardFullWidth>
+          <CardFullWidth
+            name="KASTKING VALIANT EAGLE"
+            title="Solid aluminum reel with a machined spool"
+            text="With a 10+1 bearing system and up to 22lbs of drag, you’ll want to consider this reel if you like long fights with heavy fish. They’ve aimed this reel directly at the saltwater crowd seeking serious power and control..."
+            image={productImgThree}
+            alt="KASTKING VALIANT EAGLE fishing reel"
+          ></CardFullWidth>
+          <CardFullWidth
+            name="Pflueger President"
+            className="right"
+            title="It’s a lightweight, nimble reel for those that like a quick cast"
+            text="There’s something that really does feel presidential about the presentation of this graphite body spinning reel. With silver, gold, and blue anodization it almost says “executive” right on it..."
+            image={productImgFour}
+            alt="Pflueger President fishing reel"
+          ></CardFullWidth>
+          <CardFullWidth
+            name="Okuma Ceymar Lightweight"
+            title="Anti-reverse reel and 7+1 ball bearing system"
+            text="With an oiled felt drag system, there’s not much to worry about with corrosion and the maximum drag pressure of 5lbs should warn you that this reel won’t be for landing the type of fish you might handle with something like the KastKing Kodiak..."
+            image={productImgFive}
+            alt="Okuma Ceymar Lightweight fishing reel"
+          ></CardFullWidth>
+        </div>
       </div>
     </Layout>
   )
