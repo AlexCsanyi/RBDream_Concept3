@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Button from "./button"
+import { FaYoutube, FaFacebook } from "react-icons/fa"
+import { AiFillInstagram } from "react-icons/ai"
 
 import heroStyles from "./hero.module.scss"
 
@@ -28,7 +30,13 @@ const Hero = () => {
           <br /> We are the largest retailers of fishing products in Kikinda.
         </p>
         <Button></Button>
+        <div className={heroStyles.social}>
+          <AiFillInstagram className={heroStyles.instagram}></AiFillInstagram>
+          <FaYoutube className={heroStyles.youtube}></FaYoutube>
+          <FaFacebook className={heroStyles.facebook}></FaFacebook>
+        </div>
         <svg
+          className={heroStyles.wave}
           width="100%"
           height="100"
           fill="none"
