@@ -70,3 +70,25 @@
 .instagram {
   grid-column-start: 3;
 }
+
+.youtube:hover {
+  color: #c4302b;
+}
+
+.instagram:hover {
+  color: rgb(228, 64, 95);
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+@media (max-width: 640px) {
+  .social {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .instagram {
+    grid-column-start: 2;
+  }
+}
