@@ -3,4 +3,9 @@
   margin: 0 auto 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+
+  @media(max-width: 950px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
