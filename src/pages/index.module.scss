@@ -1,6 +1,10 @@
 .home {
   padding: 100px 10px;
 
+  a {
+    text-decoration: none;
+  }
+
   .welcome {
     text-align: center;
     display: flex;
