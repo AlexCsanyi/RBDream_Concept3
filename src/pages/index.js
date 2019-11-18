@@ -15,6 +15,7 @@ import productImgTwo from "../images/2.png"
 import productImgThree from "../images/product3.png"
 import productImgFour from "../images/product4.png"
 import productImgFive from "../images/product5.png"
+import { Link } from "gatsby"
 
 const IndexPage = () => {
   return (
@@ -34,12 +35,14 @@ const IndexPage = () => {
             <h4>
               <sup>01</sup>Store
             </h4>
-            <Card
-              title="Fishing"
-              text="Rods, reels, baits & more"
-              image={thumbFishing}
-              alt="Fishing rod and reel in front of a lake"
-            ></Card>
+            <Link to="/store_fishing">
+              <Card
+                title="Fishing"
+                text="Rods, reels, baits & more"
+                image={thumbFishing}
+                alt="Fishing rod and reel in front of a lake"
+              ></Card>
+            </Link>
             <Card
               title="Pets"
               text="Pet food, grooming, toys, collars & more"
@@ -61,6 +64,9 @@ const IndexPage = () => {
           </div>
         </div>
         <div className={homeStyles.section}>
+          <h4 className={homeStyles.featured}>
+            <sup>02</sup>Featured
+          </h4>
           <CardFullWidth
             name="PENN SPINFISHER V"
             title="Penn’s Spinfisher rocks a solid 5+1 bearing system"

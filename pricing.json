@@ -1,0 +1,21 @@
+{
+  "fishing": [
+    {
+      "title": "Daiwa Prorex Arashi Glide Lure 9cm SS",
+      "image": "storm-arashi-glide-bait.jpg",
+      "price": "10"
+    },
+    {
+      "title": "Chub RS Plus Comfy Chair",
+      "image": "chair.jpg",
+      "price": "15"
+    }
+  ],
+  "garden": [
+    {
+      "title": "Test",
+      "image": "storm-arashi-glide-bait.jpg",
+      "price": "15"
+    }
+  ]
+}
