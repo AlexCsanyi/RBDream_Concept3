@@ -4,11 +4,13 @@ import Head from "../components/head"
 import TableCell from "../components/pricingTable"
 import Data from "../../pricing.json"
 
+import storeStyles from './store.module.scss'
+
 const StoreFishing = () => {
   return (
     <Layout>
       <Head title="Fishing Store"></Head>
-      <div>
+      <div className={storeStyles.tableGroup}>
         {Data.fishing.map(cell => (
           <TableCell
             price={cell.price}

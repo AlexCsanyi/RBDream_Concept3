@@ -8,8 +8,8 @@ const TableCell = props => {
         alt={props.title}
         src={require(`../images/product_pages_images/${props.image}`)}
       ></img>
-      <div>{props.title}</div>
-      <div>{props.price}</div>
+      <div className={TableStyles.cellTitle}>{props.title}</div>
+      <div>{`£${props.price} GBP`}</div>
     </div>
   )
 }
