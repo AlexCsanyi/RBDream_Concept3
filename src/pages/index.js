@@ -43,24 +43,30 @@ const IndexPage = () => {
                 alt="Fishing rod and reel in front of a lake"
               ></Card>
             </Link>
-            <Card
-              title="Pets"
-              text="Pet food, grooming, toys, collars & more"
-              image={thumbPets}
-              alt="Woman is petting a Labrador dog"
-            ></Card>
-            <Card
-              alt="Gardening tools and soil"
-              title="Garden"
-              text="Seeds & tools"
-              image={thumbGarden}
-            ></Card>
-            <Card
-              title="Licence"
-              text="Get your fishing licence in store"
-              image={thumbTicket}
-              alt="A wooden sign with tickets written on it"
-            ></Card>
+            <Link to="/store_pets">
+              <Card
+                title="Pets"
+                text="Pet food, grooming, toys, collars & more"
+                image={thumbPets}
+                alt="Woman is petting a Labrador dog"
+              ></Card>
+            </Link>
+            <Link to="/store_garden">
+              <Card
+                alt="Gardening tools and soil"
+                title="Garden"
+                text="Seeds & tools"
+                image={thumbGarden}
+              ></Card>
+            </Link>
+            <Link to="/store_licences">
+              <Card
+                title="Licence"
+                text="Get your fishing licence in store"
+                image={thumbTicket}
+                alt="A wooden sign with tickets written on it"
+              ></Card>
+            </Link>
           </div>
         </div>
         <div className={homeStyles.section}>

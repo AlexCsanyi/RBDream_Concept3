@@ -24,13 +24,77 @@
       "title": "Korda Tackle Safe Fishing Box 29 Compartments",
       "image": "korda_tackle_safe_storage.jpg",
       "price": "26"
+    },
+    {
+      "title": "Aqua M3 Duo Bivvy",
+      "image": "tent.jpg",
+      "price": "450"
     }
   ],
   "garden": [
     {
-      "title": "Test",
-      "image": "storm-arashi-glide-bait.jpg",
+      "title": "OUNONA Garden Tool Set",
+      "image": "tool_set.jpg",
+      "price": "39"
+    },
+    {
+      "title": "Indoor Gardening Gift Set",
+      "image": "gift_set.jpg",
+      "price": "23"
+    },
+    {
+      "title": "Spear & Jackson - Razorsharp Advantage Large Bypass Secateur",
+      "image": "secateur.jpg",
+      "price": "22"
+    },
+    {
+      "title": "Garden Digging Hoe with Full Length 120cm Wooden Handle",
+      "image": "digging_hoe.jpg",
       "price": "15"
+    }
+  ],
+  "pets": [
+    {
+      "title": "Medium Oval Pet Bed",
+      "image": "pet_bed.jpg",
+      "price": "12"
+    },
+    {
+      "title": "Wellbeloved Adult Dog Food - Turkey & Rice - 10kg",
+      "image": "food.jpg",
+      "price": "36"
+    },
+    {
+      "title": "Lintbells YuMOVE Young & Active Dog Supplement",
+      "image": "supplement.jpg",
+      "price": "22"
+    },
+    {
+      "title": "La Digue I Cat Tree",
+      "image": "cat_tree.jpg",
+      "price": "32"
+    },
+    {
+      "title": "Prestige Parrot Food - 3kg",
+      "image": "parrot.jpg",
+      "price": "9"
+    },
+    {
+      "title": "Corner Litter Tray XXL",
+      "image": "tray.jpg",
+      "price": "19"
+    }
+  ],
+  "licences": [
+    {
+      "title": "Non-migratory trout and coarse",
+      "image": "licence1.jpg",
+      "price": "45"
+    },
+    {
+      "title": "Salmon and sea trout",
+      "image": "licence2.jpg",
+      "price": "54"
     }
   ]
 }
