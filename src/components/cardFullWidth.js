@@ -1,6 +1,6 @@
 import React from "react"
 import cardFullWidthStyles from "./cardFullWidth.module.scss"
-import { FaHeart, FaShareAlt } from "react-icons/fa"
+import { FaHeart, FaShareAlt, FaFacebook, FaInstagram } from "react-icons/fa"
 
 class cardFullWidth extends React.Component {
   constructor(props) {
@@ -8,14 +8,19 @@ class cardFullWidth extends React.Component {
 
     this.state = {
       liked: false,
-      likes: 0,
+      clicked: false,
     }
 
-    this.onClick = this.onClick.bind(this)
+    this.showRedHeart = this.showRedHeart.bind(this)
+    this.shareClicked = this.shareClicked.bind(this)
   }
 
-  onClick = event => {
+  showRedHeart = event => {
     this.setState({ liked: !this.state.liked })
+  }
+
+  shareClicked = () => {
+    this.setState({ clicked: !this.state.clicked })
   }
 
   render() {
@@ -44,14 +49,37 @@ class cardFullWidth extends React.Component {
           </p>
           <hr></hr>
           <div className={cardFullWidthStyles.iconGroup}>
-            <FaShareAlt></FaShareAlt>
+            <div
+              className={
+                this.state.clicked
+                  ? cardFullWidthStyles.shareActive
+                  : cardFullWidthStyles.shareStandard
+              }
+              onClick={this.shareClicked}
+            >
+              <FaShareAlt></FaShareAlt>
+              <a
+                href="https://www.instagram.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaInstagram></FaInstagram>
+              </a>
+              <a
+                href="https://en-gb.facebook.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaFacebook></FaFacebook>
+              </a>
+            </div>
             <FaHeart
               className={
                 this.state.liked
                   ? cardFullWidthStyles.redHeart
                   : cardFullWidthStyles.standardHeart
               }
-              onClick={this.onClick}
+              onClick={this.showRedHeart}
             ></FaHeart>
           </div>
         </div>
