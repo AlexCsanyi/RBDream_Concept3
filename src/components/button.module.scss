@@ -1,3 +1,10 @@
+.button-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .standard-button {
   font-size: 17px;
   font-weight: 600;
@@ -10,6 +17,7 @@
   text-decoration: none;
   transition: ease-in-out 0.6s;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .standard-button:hover {

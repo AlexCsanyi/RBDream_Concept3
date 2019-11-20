@@ -29,7 +29,7 @@ const Hero = () => {
           If you love fishing this is the place to be!
           <br /> We are the largest retailers of fishing products in Kikinda.
         </p>
-        <Button></Button>
+        <Button text="Find Us" linkAddress="about"></Button>
         <div className={heroStyles.social}>
           <AiFillInstagram className={heroStyles.instagram}></AiFillInstagram>
           <FaYoutube className={heroStyles.youtube}></FaYoutube>
